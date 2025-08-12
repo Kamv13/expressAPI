@@ -33,8 +33,12 @@ app.listen(PORT, () => {
 
 
 
+const pedidos = [
+  { id: 1, usuario: "Juan", total: 500 },
+  { id: 2, usuario: "Ana", total: 750 },
+  { id: 3, usuario: "Carlos", total: 1200 }
+];
 
-
-
-
-
+app.get('/api/pedidos', (req, res) => {
+  res.json(pedidos);
+});
