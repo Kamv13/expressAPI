@@ -32,6 +32,12 @@ app.listen(PORT, () => {
 });
 
 
+
+
+
+
+
+
 const pedidos = [
   { id: 1, usuario: "Juan", total: 500 },
   { id: 2, usuario: "Ana", total: 750 },
