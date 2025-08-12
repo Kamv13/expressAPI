@@ -18,6 +18,28 @@ app.get("/api/usuarios", (req, res) => {
   res.json(usuarios);
 });
 
+app.get('/api/categorias', (req, res) => {
+  const categorias = [
+  { id: 1, nombre: 'Electrónica' },
+  { id: 2, nombre: 'Ropa' },
+  { id: 3, nombre: 'Hogar' }
+];
+  res.json(categorias);
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
