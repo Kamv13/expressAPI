@@ -31,13 +31,6 @@ app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
 
-
-
-
-
-
-
-
 const pedidos = [
   { id: 1, usuario: "Juan", total: 500 },
   { id: 2, usuario: "Ana", total: 750 },
@@ -47,8 +40,6 @@ const pedidos = [
 app.get('/api/pedidos', (req, res) => {
   res.json(pedidos);
 });
-
-
 
 
 
