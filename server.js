@@ -7,11 +7,16 @@ app.get("/api/productos", (req, res) => {
   res.json(productos);
 });
 
-app.get("/api/usuarios",(req, res) => {
-  const usuarios = [{
-    
-  }]
-})
+app.get("/api/usuarios", (req, res) => {
+  const usuarios = [
+    {
+      id: 1,
+      nombre: "Juan",
+      email: "juan@gmail.com",
+    },
+  ];
+  res.json(usuarios);
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
